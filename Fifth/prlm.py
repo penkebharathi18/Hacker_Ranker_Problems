@@ -1,6 +1,6 @@
 def can_stack(blocks):
     l, r = 0, len(blocks) - 1
-    top = float('inf')
+    top = float('inf') 
 
     while l <= r:
         if blocks[l] >= blocks[r]:
@@ -9,7 +9,6 @@ def can_stack(blocks):
         else:
             chosen = blocks[r]
             r -= 1
-
         if chosen <= top:
             top = chosen
         else:
